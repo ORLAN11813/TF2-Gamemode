@@ -492,8 +492,8 @@ function meta:SetPlayerClass(class)
 			        self:SetHealth(2000)
 			        self:SetMaxHealth(2000)
 			elseif self:GetPlayerClass() == "sniper" then
-				self:SetHealth(3600)
-				self:SetMaxHealth(3600)
+				self:SetHealth(1600)
+				self:SetMaxHealth(1600)
 			elseif self:GetPlayerClass() == "scout" and self:GetPlayerClass() == "spy" then
 				self:SetHealth(1600)
 				self:SetMaxHealth(1600)	
