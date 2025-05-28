@@ -476,7 +476,22 @@ function meta:SetPlayerClass(class)
 				c.Model = "models/bots/"..(c.ModelName or "scout").."/bot_"..(c.ModelName or "scout")..".mdl"
 			end
 			self:SetModelScale(1.75)
-			if self:GetPlayerClass() == "medic" and self:GetPlayerClass() == "pyro" and self:GetPlayerClass() == "soldier" and self:GetPlayerClass() == "demoman" and self:GetPlayerClass() == "engineer" and self:GetPlayerClass() == "sniper" then
+		        elseif self:GetPlayerClass() == "medic" then
+				self:SetHealth(4500)
+				self:SetMaxHealth(4500)
+		        elseif self:GetPlayerClass() == "pyro" then
+			        self:SetHealth(3000)
+			        self:SetMaxHealth(3000)
+		        elseif self:GetPlayerClass() == "soldier" then
+			        self:SetHealth(3800)
+			        self:SetMaxHealth(3800) 
+			elseif self:GetPlayerClass() == "demoman"then
+			        self:SetHealth(3300)
+			        self:SetMaxHealth(3300)
+			elseif self:GetPlayerClass() == "engineer"then
+			        self:SetHealth(2000)
+			        self:SetMaxHealth(2000)
+			elseif self:GetPlayerClass() == "sniper" then
 				self:SetHealth(3600)
 				self:SetMaxHealth(3600)
 			elseif self:GetPlayerClass() == "scout" and self:GetPlayerClass() == "spy" then
