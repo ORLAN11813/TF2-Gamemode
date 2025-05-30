@@ -52,7 +52,7 @@ SWEP.Primary.ClipSize		= 10
 SWEP.Primary.DefaultClip	= SWEP.Primary.ClipSize
 SWEP.Primary.Delay          = 0.8 * 0.25
 
-SWEP.IsRapidFire = false
+SWEP.IsRapidFire = true
 SWEP.ReloadSingle = true
 
 SWEP.HoldType = "PRIMARY"
