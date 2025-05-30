@@ -163,7 +163,7 @@ function SWEP:ShootProjectile()
 		
 		rocket:SetOwner(self.Owner)
 		rocket.BaseDamage = 95 * 2.0
-		rocket.BaseSpeed = 1100 * 1.3
+		rocket.BaseSpeed = 1100 * 3.0
 		self:InitProjectileAttributes(rocket)
 		
 		rocket:Spawn()
