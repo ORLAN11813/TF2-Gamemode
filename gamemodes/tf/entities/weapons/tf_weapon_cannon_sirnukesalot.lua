@@ -60,8 +60,6 @@ SWEP.ShootSound = Sound("Weapon_LooseCannon.Shoot")
 SWEP.ShootCritSound = Sound("Weapon_LooseCannon.ShootCrit")
 SWEP.ReloadSound = Sound("Weapon_GrenadeLauncher.WorldReload")
 
-SWEP.BaseDamage = * 7
-SWEP.ExplosionRadius = * 1.2
 SWEP.Primary.ClipSize		= 2
 SWEP.Primary.DefaultClip	= SWEP.Primary.ClipSize
 SWEP.Primary.Ammo			= TF_PRIMARY
@@ -257,10 +255,6 @@ function SWEP:ShootProjectile()
 		if auto_reload then
 			timer.Create("AutoReload", (self:SequenceDuration() + self.AutoReloadTime), 1, function() self:Reload() end)
 		end
-
-		DispatchParticleEffect("explosionTrail_seeds_mvm")
-DispatchParticleEffect("fluidSmokeExpl_ring_mvm")
-
 end
 
 		local grenade = ents.Create("tf_projectile_cannonball")
