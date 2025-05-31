@@ -46,6 +46,13 @@ SWEP.PunchView = Angle( 0, 0, 0 )
 
 SWEP.Properties = {}
 
+SWEP.ChargeTime = 2
+SWEP.MinForce = 150
+SWEP.MaxForce = 2800 * 0.65
+SWEP.CriticalChance = 100
+SWEP.MinAddPitch = -1
+SWEP.MaxAddPitch = -6
+
 SWEP.VM_DRAW = ACT_VM_DRAW_QRL
 SWEP.VM_IDLE = ACT_VM_IDLE_QRL
 SWEP.VM_PULLBACK = ACT_VM_PULLBACK_QRL
