@@ -5,7 +5,7 @@ end
 
 if CLIENT then
 
-SWEP.PrintName			= "Rocket Launcher Crit MVM"
+SWEP.PrintName			= "Crit Rocket Launcher"
 SWEP.Slot				= 0
 
 end
@@ -16,6 +16,10 @@ SWEP.ViewModel			= "models/weapons/v_models/v_rocketlauncher_soldier.mdl"
 SWEP.WorldModel			= "models/weapons/w_models/w_rocketlauncher.mdl"
 SWEP.Crosshair = "tf_crosshair3"
 
+SWEP.Spawnable = true
+SWEP.AdminOnly = true
+SWEP.Category = "Team Fortress 2"
+
 SWEP.MuzzleEffect = "muzzle_pipelauncher"
 
 SWEP.ShootSound = Sound("weapons/rocket_shoot.wav")
@@ -25,8 +29,8 @@ SWEP.ShootCritSound = Sound("Weapon_RPG.SingleCrit")
 SWEP.Primary.ClipSize		= 4
 SWEP.Primary.DefaultClip	= SWEP.Primary.ClipSize
 SWEP.Primary.Ammo			= TF_PRIMARY
-SWEP.Primary.Delay = 0.8 * 0.6
-SWEP.ReloadTime = 0.8 * -0.8
+SWEP.Primary.Delay = 0.8
+SWEP.ReloadTime = 0.8
 
 SWEP.IsRapidFire = false
 SWEP.ReloadSingle = true
