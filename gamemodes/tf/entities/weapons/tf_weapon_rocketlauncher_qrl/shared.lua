@@ -6,7 +6,7 @@ end
 
 if CLIENT then
 
-SWEP.PrintName			= "The Original for Giant Charged Soldier"
+SWEP.PrintName			= "The Original for Giant Charged BOSS Soldier"
 SWEP.Slot				= 0
 SWEP.HasCModel = true
 
@@ -18,8 +18,8 @@ SWEP.ViewModel			= "models/weapons/c_models/c_soldier_arms.mdl"
 SWEP.WorldModel			= "models/weapons/c_models/c_bet_rocketlauncher/c_bet_rocketlauncher.mdl"
 SWEP.Crosshair = "tf_crosshair3"
 
-SWEP.Spawnable = true
-SWEP.Adminonly = true
+SWEP.Spawnable = 
+SWEP.Adminonly = 
 SWEP.Category = "Team Fortress 2"
 
 SWEP.MuzzleEffect = "muzzle_pipelauncher"
@@ -29,11 +29,11 @@ SWEP.ShootCritSound = Sound("Weapon_QuakeRPG.SingleCrit")
 SWEP.CustomExplosionSound = Sound("Weapon_QuakeRPG.Reload")
 SWEP.ReloadSound = Sound("Weapon_QuakeRPG.Reload")
 
-SWEP.Primary.ClipSize		= 4
+SWEP.Primary.ClipSize		= 11
 SWEP.Primary.DefaultClip	= SWEP.Primary.ClipSize
 SWEP.Primary.Ammo			= TF_PRIMARY
-SWEP.Primary.Delay = 2.0
-SWEP.ReloadTime = 0.8 * 0.2
+SWEP.Primary.Delay = 2.0 * 0.2
+SWEP.ReloadTime = 0.8 * 0.6
 
 SWEP.IsRapidFire = false
 SWEP.ReloadSingle = true
@@ -120,7 +120,7 @@ function SWEP:ShootProjectile()
 		self:InitProjectileAttributes(rocket)
 		
 		if (self.Owner:GetPlayerClass() == "giantsoldiercharged") then
-			rocket.BaseSpeed = 1100 * 0.5
+			rocket.BaseSpeed = 1100 * 1.3
 		end 
 		
 		rocket:Spawn()
